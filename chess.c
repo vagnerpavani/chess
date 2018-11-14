@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 char Tabuleiro[8][8] = {
     'T', 'C', 'B', 'Q', 'K', 'B', 'C', 'T', 
@@ -21,7 +22,17 @@ void MostrarTabuleiro(){
     printf("\n");
 }
 
-void main(){
+void Turno(){
     MostrarTabuleiro();
+    If(Rei = false){
+        printf("GAME OVER");
+    }
+    VarTurno++;
+}
+
+void main(){
+    int VarTurno = 1;
+    Turno();
+    
 }
 
